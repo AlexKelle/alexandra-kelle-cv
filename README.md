@@ -1,3 +1,4 @@
 # alexandra-kelle-cv
 
-[https://github.com/AlexKelle/alexandra-kelle-cv](https://github.com/AlexKelle/alexandra-kelle-cv)
+[https://alexkelle.github.io/alexandra-kelle-cv/
+](https://alexkelle.github.io/alexandra-kelle-cv/)
