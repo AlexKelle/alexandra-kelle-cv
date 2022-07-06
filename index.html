@@ -8,10 +8,11 @@
   <link rel="stylesheet" href="./style/index.css">
   <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
   <title>Alexandra Kelle</title>
+  <script src="./index.js"></script>
 </head>
 
 <body>
-  <div class="container">
+  <div class="container" id="root">
     <header class="header">
       <section class="avatar">
         <article class="ava__container">
@@ -65,11 +66,11 @@
                 JavaScript
               </div>
               <div class="stars">
-                <div class="clip-star"></div>
-                <div class="clip-star"></div>
-                <div class="clip-star"></div>
-                <div class="clip-star"></div>
-                <div class="clip-star"></div>
+                <div class="clip-star">1</div>
+                <div class="clip-star">2</div>
+                <div class="clip-star">3</div>
+                <div class="clip-star">4</div>
+                <div class="clip-star">5</div>
               </div>
             </div>
             <div class="skill__item">
@@ -432,6 +433,9 @@
             <img src="./assets/self-education.svg" alt="self education" title="self education" class="passion__img">
           </div>
         </article>
+        <button onclick="getPrint()" class="print__separator">
+          <h2 class="separator__title zero__margin">Print cv</h2>
+        </button>
       </section>
       <section class="section-right">
         <div class="info__container">
@@ -492,12 +496,271 @@
               <strong>Specialty: finance and credit</strong><br>
               2003 – 2006<br>
               <br>
+              <em>The Linux foundation</em><br>
+              <strong>Node.js Application DevelopmentLFW211</strong><br>
+              November 21, 2021<br>
+              <br>
+              <em>Technology training center "BelHard"​ training center "INTELISOFT"​</em><br>
+              <strong>Software testing</strong><br>
+              November, 2016<br>
+              <br>
+            </div>
+          </article>
+          <br>
+          <article class="projects">
+            <div class="info__title">
+              <img src="./assets/projects.svg" alt="projects" title="projects" class="info__img">
+              <p class="info__text">Projects</p>
+            </div>
+            <div class="profile__text">
+              <table>
+                <th>NDA</th>
+                <th></th>
+                <tr>
+                  <td>Description</td>
+                  <td>Bank loan automation project</td>
+                </tr>
+                <tr>
+                  <td>Team</td>
+                  <td> 36 devs, 5 qa, 10 ba, 3 pm, 1 ui/ux, 2 architect.</td>
+                </tr>
+                <tr>
+                  <td>Job Position</td>
+                  <td>Software Engineer</td>
+                </tr>
+                <tr>
+                  <td>Project roles</td>
+                  <td>Frontend Developer, Team/Tech Leader</td>
+                </tr>
+                <tr>
+                  <td>Tasks</td>
+                  <td>
+                    - requirements analysis<br>
+                    - communication with the command<br>
+                    - tasks estimations and prioritization<br>
+                    - development of the architecture of the front-end part of the application<br>
+                    - code review<br>
+                    - frontend development<br>
+                    - test development<br>
+                    - bug fixing
+                  </td>
+                </tr>
+                <tr>
+                  <td>Technologies</td>
+                  <td>React, Redux, TypeScript, SASS, CSS, HTML, Webpack, Aixos,
+                    WebSocket,REST, Jest/Enzyme, i18next (Internationalization)"</td>
+                </tr>
+              </table>
+              <br>
+              <table>
+                <th>NDA</th>
+                <th></th>
+                <tr>
+                  <td>Description</td>
+                  <td>Online store development.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Team</td>
+                  <td>6 dev, 2 qa, 1 ba, 3 pm, 2 ui/ux
+                  </td>
+                </tr>
+                <tr>
+                  <td>Job Position</td>
+                  <td>Software Engineer</td>
+                </tr>
+                <tr>
+                  <td>Project roles</td>
+                  <td>Frontend Developer</td>
+                </tr>
+                <tr>
+                  <td>Tasks</td>
+                  <td>
+                    - requirements analysis<br>
+                    - communication with the command<br>
+                    - tasks estimations and prioritization<br>
+                    - code review<br>
+                    - frontend development<br>
+                    - test development<br>
+                    - bug fixing
+                  </td>
+                </tr>
+                <tr>
+                  <td>Technologies</td>
+                  <td>Freemarker, JQuery Webpack, Java 8, JavaScript
+                    Aixos, SASS, CSS, HTML, Material-UI, Webpack</td>
+                </tr>
+              </table>
+              <br>
+              <table>
+                <th>NDA</th>
+                <th></th>
+                <tr>
+                  <td>Description</td>
+                  <td>Development of system providing cooperation of Hotels, Tourists Operators and Tourist Agencies.
+                    System helps
+                    stakeholders to manage groups, payments and deadlines.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Team</td>
+                  <td>5 dev, 2 qa, 1 ba, 1 pm, 2 ui/ux</td>
+                </tr>
+                <tr>
+                  <td>Job Position</td>
+                  <td>Software Engineer</td>
+                </tr>
+                <tr>
+                  <td>Project roles</td>
+                  <td>Frontend Developer</td>
+                </tr>
+                <tr>
+                  <td>Tasks</td>
+                  <td>
+                    - requirements analysis<br>
+                    - communication with the command<br>
+                    - tasks estimations and prioritization<br>
+                    - code review<br>
+                    - frontend development<br>
+                    - test development<br>
+                    - bug fixing
+                  </td>
+                </tr>
+                <tr>
+                  <td>Technologies</td>
+                  <td>
+                    React, Redux, Flow, Webpack, Java 8
+                    Aixos, CSS, HTML, Material-UI, Webpack, REST
+                  </td>
+                </tr>
+              </table>
+              <br>
+              <table>
+                <th>NDA</th>
+                <th></th>
+                <tr>
+                  <td>Description</td>
+                  <td>Development of web-platform for international realty Investments based on blockchain principles.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Team</td>
+                  <td>4 dev (+ 2 dev), 1 ba, 1 pm, 1 ux/ui designer, 1 qa (+ 1 qa), 1 architect</td>
+                </tr>
+                <tr>
+                  <td>Job Position</td>
+                  <td>Software Engineer</td>
+                </tr>
+                <tr>
+                  <td>Project roles</td>
+                  <td>Frontend Developer</td>
+                </tr>
+                <tr>
+                  <td>Tasks</td>
+                  <td>
+                    - requirements analysis<br>
+                    - communication with the command<br>
+                    - tasks estimations and prioritization<br>
+                    - code review<br>
+                    - frontend development<br>
+                    - test development<br>
+                    - bug fixing
+                  </td>
+                </tr>
+                <tr>
+                  <td>Technologies</td>
+                  <td>
+                    React, Aixos, Redux, Flow, Jest/Enzyme, i18next, Ant design, REST
+                  </td>
+                </tr>
+              </table>
+              <br>
+              <table>
+                <th>NDA</th>
+                <th></th>
+                <tr>
+                  <td>Description</td>
+                  <td>Development of the system providing interaction of owners of a photography Studio and its clients.
+                    The system helps to
+                    effectively interact with customers, effectively use the working time of the Studio and its space.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Team</td>
+                  <td>2 dev, 1 qa, 1 ba, 1 pm, 1 ui/ux
+                  </td>
+                </tr>
+                <tr>
+                  <td>Job Position</td>
+                  <td>Software Engineer</td>
+                </tr>
+                <tr>
+                  <td>Project roles</td>
+                  <td>Frontend Developer</td>
+                </tr>
+                <tr>
+                  <td>Tasks</td>
+                  <td>
+                    - requirements analysis<br>
+                    - communication with the command<br>
+                    - tasks estimations and prioritization<br>
+                    - code review<br>
+                    - frontend development<br>
+                    - test development<br>
+                    - bug fixing
+                  </td>
+                </tr>
+                <tr>
+                  <td>Technologies</td>
+                  <td>
+                    React, Redux, Webpack, Java 8
+                  </td>
+                </tr>
+              </table>
+              <br>
+              <table>
+                <th>NDA</th>
+                <th></th>
+                <tr>
+                  <td>Description</td>
+                  <td>Online store development.</td>
+                </tr>
+                <tr>
+                  <td>Team</td>
+                  <td>2 dev, 1 qa, 1pm, 1 ui/ux
+                  </td>
+                </tr>
+                <tr>
+                  <td>Job Position</td>
+                  <td>Data analyst, QA</td>
+                </tr>
+                <tr>
+                  <td>Project roles</td>
+                  <td>Data analyst, QA</td>
+                </tr>
+                <tr>
+                  <td>Tasks</td>
+                  <td>
+                    - test development<br>
+                    - data analysis<br>
+                    - database schema development<br>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Technologies</td>
+                  <td>
+                    JavaScrip, HTML,CSS, Java
+                  </td>
+                </tr>
+              </table>
+              <br>
             </div>
           </article>
         </div>
       </section>
     </main>
-    <footer class="footer">c Alex Kelle</footer>
+    <footer class="footer">
+    </footer>
   </div>
 </body>
 
