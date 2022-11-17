@@ -477,6 +477,7 @@ table, th, td {
   .skill__items-container {
     height: auto;
     overflow-y: visible;
+    min-width: 180px;
   }
 
   .info__container {
