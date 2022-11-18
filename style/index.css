@@ -561,6 +561,10 @@ table, th, td {
     font-size: var(--fs-small);
   }
 
+  .projects {
+    margin-top: 40px;
+  }
+
   .contact__img {
     width: 1.2rem;
   }
@@ -572,5 +576,9 @@ table, th, td {
 
   .passion__item-container {
     flex-wrap: wrap;
+  }
+
+  .print__separator {
+    margin-top: 50px;
   }
 }
