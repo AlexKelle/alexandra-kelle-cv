@@ -9,7 +9,7 @@
   --big-radius: 4rem;
   --radius: 4rem;
   --small-radius: 1rem;
-  --left-width-780: 210px;
+  --left-width-780: 230px;
   --left-art-container-mr-bt: 25px;
   --separator-left: 20px;
   --separator-height: 55px;
@@ -380,6 +380,7 @@ footer {
   margin-bottom: calc(var(--separator-height)/2);
   color: var(--light);
   background-color: var(--grey);
+  border: none;
   border-radius: var(--radius) var(--radius);
   box-shadow: 5px 5px 5px 5px var(--dark);
 }
@@ -507,8 +508,8 @@ table, th, td {
   }
 
   .clip-star {
-    height: 15px;
-    width: 15px;
+    height: 12px;
+    width: 12px;
   }
 
   .passion__item-container {
@@ -548,12 +549,16 @@ table, th, td {
     border-bottom-left-radius: 0;
   }
 
+  .avatar {
+    min-width: 200px;
+  }
+
   .section-left {
-    min-width: var(--left-width-780);
+    min-width: 200px;
   }
 
   .section-right {
-    width: 55%;
+    width: 95%;
     font-size: var(--fs-regular);
   }
 
@@ -565,13 +570,17 @@ table, th, td {
     margin-top: 40px;
   }
 
+  .contact__item {
+    display: block;
+  }
+
   .contact__img {
     width: 1.2rem;
   }
 
   .clip-star {
-    height: 15px;
-    width: 15px;
+    height: 12px;
+    width: 12px;
   }
 
   .passion__item-container {
@@ -579,6 +588,6 @@ table, th, td {
   }
 
   .print__separator {
-    margin-top: 50px;
+    display: none;
   }
 }
