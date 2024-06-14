@@ -1,0 +1,146 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    font-size: .85em;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 5px;
+}
+
+.cv-container {
+    max-width: 800px;
+    min-width: 560px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+header p {
+    margin: 5px 0;
+}
+
+header a {
+    color: #0073b1;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    margin: 0;
+    font-size: 1.2em;
+}
+
+section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section ul li {
+    margin-bottom: 5px;
+}
+
+/* Skills Section */
+.skills-name {
+    display: block;
+    max-width: 50%;
+}
+
+.inner-list {
+    column-width: 10rem;
+}
+
+.inner-list li {
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+/* Work Experience Section */
+.work-experience h3,
+.work-experience p {
+    margin-bottom: 5px;
+}
+
+/* Languages Section */
+.languages p {
+    background: #e7e7e7;
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Projects Section */
+.project {
+    margin-bottom: 20px;
+}
+
+.project h3 {
+    margin: 5px;
+    font-size: 1em;
+}
+
+.project p,
+.project ul {
+    margin: 0;
+    padding: 0;
+}
+
+.project ul li {
+    background: none;
+    margin: 0;
+    padding: 0;
+}
+
+.print-button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #0073b1;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.print-button:hover {
+    background-color: #005f8d;
+}
+
+/* Print Styles */
+@media print {
+    .cv-container {
+        max-width: fit-content;
+        min-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        box-shadow: none;
+    }
+    .inner-list {
+        column-width: 10rem;
+    }
+}
