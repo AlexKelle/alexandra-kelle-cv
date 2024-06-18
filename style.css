@@ -128,7 +128,7 @@ section ul li {
 }
 
 .print-button:hover {
-    background-color: #005f8d;
+    background-color: #0073b1;
 }
 
 /* Print Styles */
@@ -136,11 +136,16 @@ section ul li {
     .cv-container {
         max-width: fit-content;
         min-width: 800px;
-        margin: 0 auto;
+       margin-bottom: 20px;
         padding: 20px;
         box-shadow: none;
     }
+
     .inner-list {
         column-width: 10rem;
+    }
+
+    .print-button {
+        display: none!important;
     }
 }
