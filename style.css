@@ -96,6 +96,10 @@ section ul li {
     border-radius: 5px;
 }
 
+.languages .inner-list {
+    column-width: 20rem;
+}
+
 /* Projects Section */
 .project {
     margin-bottom: 20px;
