@@ -60,13 +60,17 @@ section ul {
 }
 
 section ul li {
-    margin-bottom: 5px;
+    margin-bottom: 3px;
 }
 
 /* Skills Section */
 .skills-name {
     display: block;
     max-width: 50%;
+}
+
+.skills .inner-list {
+    column-width: 7rem;
 }
 
 .inner-list {
@@ -139,6 +143,10 @@ section ul li {
        margin-bottom: 20px;
         padding: 20px;
         box-shadow: none;
+    }
+
+    .skills .inner-list {
+        column-width: 7rem;
     }
 
     .inner-list {
