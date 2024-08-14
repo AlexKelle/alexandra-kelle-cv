@@ -44,7 +44,7 @@ header a:hover {
 
 /* Section Styles */
 section {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 section h2 {
@@ -60,13 +60,17 @@ section ul {
 }
 
 section ul li {
-    margin-bottom: 5px;
+    margin-bottom: 3px;
 }
 
 /* Skills Section */
 .skills-name {
     display: block;
     max-width: 50%;
+}
+
+.skills .inner-list {
+    column-width: 7rem;
 }
 
 .inner-list {
@@ -90,6 +94,10 @@ section ul li {
     margin-bottom: 5px;
     padding: 10px;
     border-radius: 5px;
+}
+
+.languages .inner-list {
+    column-width: 20rem;
 }
 
 /* Projects Section */
@@ -133,6 +141,10 @@ section ul li {
 
 /* Print Styles */
 @media print {
+    section {
+        margin-bottom: 10px;
+    }
+
     .cv-container {
         max-width: fit-content;
         min-width: 800px;
@@ -141,8 +153,22 @@ section ul li {
         box-shadow: none;
     }
 
+    .inner-list li{
+        display: inline-block;
+        margin-right: 15px;
+    }
+
+    .inner-list li:last-child {
+        margin-right: 0;
+    }
+
+    .skills .inner-list {
+        column-width: revert;
+
+    }
+
     .inner-list {
-        column-width: 10rem;
+        column-width: revert;
     }
 
     .print-button {
