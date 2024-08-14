@@ -44,7 +44,7 @@ header a:hover {
 
 /* Section Styles */
 section {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 section h2 {
@@ -137,6 +137,10 @@ section ul li {
 
 /* Print Styles */
 @media print {
+    section {
+        margin-bottom: 10px;
+    }
+
     .cv-container {
         max-width: fit-content;
         min-width: 800px;
@@ -145,12 +149,22 @@ section ul li {
         box-shadow: none;
     }
 
+    .inner-list li{
+        display: inline-block;
+        margin-right: 15px;
+    }
+
+    .inner-list li:last-child {
+        margin-right: 0;
+    }
+
     .skills .inner-list {
-        column-width: 7rem;
+        column-width: revert;
+
     }
 
     .inner-list {
-        column-width: 10rem;
+        column-width: revert;
     }
 
     .print-button {
