@@ -1,27 +1,26 @@
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
-    font-size: .85rem;
-    line-height: 1.6;
+    margin: 0;
+    padding: 0;
     background-color: #f4f4f4;
     color: #333;
-    margin: 0;
-    padding: 5px;
+    font-size: .85rem;
+    line-height: 1.6;
 }
 
+/* CV Container */
 .cv-container {
     max-width: 800px;
-    min-width: 560px;
-    margin: 0 auto;
-    padding: 20px;
+    margin: 20px auto;
     background: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
 }
 
 /* Header Styles */
 header {
     text-align: center;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
 }
 
 header h1 {
@@ -36,6 +35,7 @@ header p {
 header a {
     color: #0073b1;
     text-decoration: none;
+    font-weight: bold;
 }
 
 header a:hover {
@@ -44,93 +44,53 @@ header a:hover {
 
 /* Section Styles */
 section {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 section h2 {
     border-bottom: 2px solid #333;
     padding-bottom: 5px;
-    margin: 0;
-    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-size: 1.25rem;
 }
 
-section ul {
+/* Skills and Languages Lists */
+.skills-list, .languages-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.skills-list li {
     list-style-type: none;
-    padding: 0;
 }
 
-section ul li {
-    margin-bottom: 3px;
-}
-
-/* Skills Section */
-.skills-name {
-    display: block;
-    max-width: 50%;
-}
-
-.skills .inner-list {
-    column-width: 7rem;
-}
-
-.inner-list {
-    column-width: 10rem;
-}
-
-.inner-list li {
-    list-style-type: none;
-    list-style-position: inside;
-}
-
-ul li > ul{
-    margin-bottom: 0.85rem;
-}
-
-/* Work Experience Section */
-.work-experience h3,
-.work-experience p {
+.skills-list li, .languages-list li {
     margin-bottom: 5px;
 }
 
-/* Languages Section */
-.languages p {
-    background: #e7e7e7;
-    margin-bottom: 5px;
-    padding: 10px;
-    border-radius: 5px;
+/* Job Styles */
+.job {
+    margin-bottom: 15px;
 }
 
-.languages .inner-list {
-    column-width: 20rem;
-}
-
-/* Projects Section */
-.project {
-    margin-bottom: 20px;
-}
-
-.project h3 {
-    margin: 5px;
-    font-size: 1em;
-}
-
-.project p,
-.project ul {
+.job h3, h3 {
+    font-size: 1rem;
     margin: 0;
-    padding: 0;
 }
 
-.project ul li {
-    background: none;
-    margin: 0;
-    padding: 0;
+.job p {
+    margin: 5px 0;
+}
+
+.job ul {
+    padding-left: 20px;
+    margin: 5px 0;
 }
 
 .print-button {
     display: block;
-    margin: 10px auto;
+    margin: 20px auto;
     padding: 10px 20px;
-    font-size: 1rem;
     color: #fff;
     background-color: #0073b1;
     border: none;
@@ -140,41 +100,10 @@ ul li > ul{
 }
 
 .print-button:hover {
-    background-color: #0073b1;
+    background-color: #005f8a;
 }
 
-/* Print Styles */
 @media print {
-    section {
-        margin-bottom: 10px;
-    }
-
-    .cv-container {
-        max-width: fit-content;
-        min-width: 800px;
-       margin-bottom: 20px;
-        padding: 20px;
-        box-shadow: none;
-    }
-
-    .inner-list li{
-        display: inline-block;
-        margin-right: 15px;
-    }
-
-    .inner-list li:last-child {
-        margin-right: 0;
-    }
-
-    .skills .inner-list {
-        column-width: revert;
-
-    }
-
-    .inner-list {
-        column-width: revert;
-    }
-
     .print-button {
         display: none!important;
     }
